@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<script>
+    window.addEventListener('load', () => {
+        document.querySelectorAll('.skill-bar').forEach(bar => {
+            const fill = bar.querySelector('.fill');
+            const level = bar.getAttribute('data-level');
+            setTimeout(() => {
+                fill.style.width = level + '%';
+            }, 300); // kleine vertraging voor visueel effect
+        });
+    });
+</script>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Portfolio<span class="logo-dot">.</span></a>
+        <div class="nav-info">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="personal.html">Personal</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="references.html">References</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="skills">
+        <div class="skills-info">
+            <h1>Skills</h1>
+            <h2>op deze pagina laat ik hoe goed ik mijn skills beheer en leg ik uit wat ik nog kan verbeteren en wat al goed gaat</h2>
+            
+            
+        </div>
+    </section>
+
+<section id="skills" class="skills-section">
+    <div class="skills-info">
+        <h1>Skills</h1>
+
+        <div class="skill-bar" data-level="80">
+            <span>Samenwerken</span>
+            <div class="bar">
+                <div class="fill"></div>
+            </div>
+        </div>
+
+        <div class="skill-bar" data-level="60">
+            <span>Zelfreflectie</span>
+            <div class="bar">
+                <div class="fill"></div>
+            </div>
+        </div>
+
+        <div class="skill-bar" data-level="80">
+            <span>C#</span>
+            <div class="bar">
+                <div class="fill"></div>
+            </div>
+        </div>
+
+                <div class="skill-bar" data-level="80">
+            <span>C++</span>
+            <div class="bar">
+                <div class="fill"></div>
+            </div>
+        </div>
+
+        <div class="skill-bar" data-level="55">
+            <span>PHP</span>
+            <div class="bar">
+                <div class="fill"></div>
+            </div>
+        </div>
+
+                <div class="skill-bar" data-level="45">
+            <span>Data Bases</span>
+            <div class="bar">
+                <div class="fill"></div>
+            </div>
+        </div>
+
+        <div class="skill-bar" data-level="40">
+            <span>HTML</span>
+            <div class="bar">
+                <div class="fill"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    
+
+</body>
+</html>
